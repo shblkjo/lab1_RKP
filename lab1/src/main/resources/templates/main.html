@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"/>
+    <link rel="stylesheet" th:href="@{style.css}">
+</head>
+<body>
+    <h1 th:text=" 'Текущая страница - ' + ${data} + '!' "/>
+    <p th:text="${content}"/>
+    <p><a href="/about">Страница автора</a></p>
+    <p><a href="/form">Форма студента</a></p>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"/>
+    <link rel="stylesheet" th:href="@{style.css}">
+</head>
+<body>
+    <h1>Информация об авторе страницы</h1>
+    <p th:text=" 'Автор страницы: ' + ${author}" />
+    <p><a href="/main"><- На главную</a></p>
+</body>
+</html>
